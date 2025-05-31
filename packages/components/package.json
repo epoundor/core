@@ -1,0 +1,59 @@
+{
+  "name": "@epoundor/components",
+  "version": "0.0.1",
+  "description": "Bibliothèque de composants Vue.js réutilisables.",
+  "main": "build/epoundor-ui.js",
+  "module": "build/epoundor-ui.js",
+  "types": "build/src/main.d.ts",
+  "style": "build/epoundor-ui.css",
+  "type": "module",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "scripts:init": "find ./scripts/ -type f -iname \"*.sh\" -exec chmod +x {} \\;",
+    "build": "vue-tsc -b && vite build",
+    "new": "pnpm scripts:init && ./scripts/create-component.sh",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepublish": "vue-tsc -b && vite build",
+    "release": "bumpp && pnpm publish",
+    "postpublish": "pnpm docs:publish",
+    "docs:publish": "pnpm build-storybook && surge storybook-static https://epoundorui.surge.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "flowbite": "^3.1.1",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.4",
+    "@storybook/addon-a11y": "8.5.3",
+    "@storybook/addon-essentials": "8.5.3",
+    "@storybook/addon-interactions": "8.5.3",
+    "@storybook/addon-mdx-gfm": "8.5.3",
+    "@storybook/addon-onboarding": "8.5.3",
+    "@storybook/blocks": "8.5.3",
+    "@storybook/test": "8.5.3",
+    "@storybook/vue3": "8.5.3",
+    "@storybook/vue3-vite": "8.5.3",
+    "@tailwindcss/postcss": "^4.0.3",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "bumpp": "^9.10.1",
+    "jiti": "^2.4.2",
+    "postcss": "^8.5.1",
+    "prettier": "^3.4.2",
+    "storybook": "8.5.3",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss": "^4.0.3",
+    "vite": "^6.0.11",
+    "vite-plugin-dts": "^4.5.0",
+    "vue-tsc": "^2.2.8"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.9"
+  }
+}

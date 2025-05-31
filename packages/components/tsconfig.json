@@ -1,0 +1,14 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["src/**/*", "src/**/*.vue", "tailwind.config.ts"],
+  "exclude": ["src/**/*.stories.ts"],
+  "compilerOptions": {
+    "composite": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable", "es2021"],
+    "module": "ESNext",
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["./src/*"]
+    }
+  }
+}
