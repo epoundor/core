@@ -7,7 +7,7 @@
     "components": "pnpm --filter components"
   },
   "keywords": [],
-  "author": "",
+  "author": "Epoundor TANDA <freedausstanda@gmail.com> (https://github.com/epoundor)",
   "license": "ISC",
   "engines": {
     "node": ">=18.12.0"
