@@ -1,6 +1,6 @@
 {
   "name": "@epoundor/components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Bibliothèque de composants Vue.js réutilisables.",
   "main": "build/epoundor-ui.js",
   "module": "build/epoundor-ui.js",
