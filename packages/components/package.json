@@ -21,7 +21,10 @@
     "postpublish": "pnpm docs:publish",
     "docs:publish": "pnpm build-storybook && surge storybook-static https://epoundorui.surge.sh"
   },
-  "keywords": [],
+  "keywords": [
+    "vue",
+    "ui"
+  ],
   "author": "",
   "license": "ISC",
   "peerDependencies": {
