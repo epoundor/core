@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@config "../tailwind.config.js";
-
 .button-primary {
     @apply bg-red-500 text-white hover:bg-red-600 active:bg-red-700 focus:bg-red-700 focus:border-white disabled:bg-gray-300 disabled:text-black
 }
