@@ -17,7 +17,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepublish": "vue-tsc -b && vite build",
-    "release": "bumpp && pnpm publish",
+    "release": "bumpp && pnpm publish --access public",
     "postpublish": "pnpm docs:publish",
     "docs:publish": "pnpm build-storybook && surge storybook-static https://epoundorui.surge.sh"
   },
