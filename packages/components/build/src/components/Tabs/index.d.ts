@@ -1,4 +1,5 @@
 import { default as Tabs, TabsProps } from './Tabs.vue';
-export { Tabs };
-export type { TabsProps };
+import { default as Tab, TabProps } from './Tab.vue';
+export { Tabs, Tab };
+export type { TabsProps, TabProps };
 export default Tabs;

@@ -7,3 +7,4 @@ export * from "./Button";
 export * from "./Table";
 export * from "./DataTable";
 export * from "./SearchInput";
+export * from "./DataSlot";
