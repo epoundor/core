@@ -1,9 +1,9 @@
 <script setup lang="ts">
-export interface DataSlot {
+export interface DataSlotProps {
   label: string
   value: string
 }
-defineProps<DataSlot>()
+defineProps<DataSlotProps>()
 </script>
 <template>
   <div class="flex flex-col py-2.5 gap-1 text-sm">
